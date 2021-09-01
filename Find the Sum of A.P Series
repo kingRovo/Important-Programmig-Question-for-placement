@@ -1,0 +1,17 @@
+public class Sum_of_A_P_Series {
+    public static void main(String[] args) {
+        int n=5; //total numbers in the series
+        int d=3; //common difference ofseries:
+        int a=24;//first term of series
+        int sum = (n * (2 * a + (n - 1)* d ))/ 2;
+        int tn = a + (n - 1) * d;
+        System.out.println("Sum of the A.P series is: ");
+        for (int i = a; i <= tn; i = i+d) {
+            if (i != tn)
+               System.out.print(i+" ");
+          else
+               System.out.print(i+" = "+sum);
+        }
+   
+    }
+}
